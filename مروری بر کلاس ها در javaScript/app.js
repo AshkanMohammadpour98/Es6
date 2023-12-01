@@ -191,3 +191,58 @@
 // console.log(car1)
 // console.log(car1.info());
 //از همین کلاس ماشین میتونیم هرچندتا که خوایم درست کنیم
+
+
+//----------------- class inheritance  ارث بری در کلاس ها ---------------------
+
+//هر چیزی که توی دنیای واقعی داریم رو میتونیم تبدیل به یه ابجیکت یا شی در جی اس تبدیل کنیم
+//مثلا یه انسان  رو اگه یه  شی درنطر بگیریم
+//یه سری ویژگی ها  داره مثل قد  وزن کد ملی و .. 
+//و یه سری رفتار ها ییم داشته باشه اون فعلی که میتونه انجام بده مثل خابیدن راه رفتن مطالعه کردن
+// و نکته بعدی همونطوز که یه انسان میتونه یه سری چیزا رو  به ارث ببره
+//کلاس ها  هم از هم میتونن ارث بری کنن
+
+//JavaScript class inheritance
+
+//extends
+//super
+
+class Person {
+    constructor(name , age ){
+        this.name = name,
+        this.age = age
+    }
+    awake(){
+        return `${this.name} بیدار شد`
+    }
+}
+
+class Student extends Person{
+    constructor (name , age , field , school){
+        super(name , age)
+        this.field = field
+        this.school = school
+    }
+    doHomeWork(){
+        return ` فلانی تکالیفش را انجام داد`
+    }
+}
+
+class Athlete extends Person{
+    constructor(name , age , sportField){
+        super(name , age)
+        this.sportField = sportField
+    }
+    infoAthlete(){
+        return `${this.name} در رشته ورزشی ${this.sportField}  فعالیت میکند`
+    }
+}
+
+const p = new Student('علی ' , 25 , 'کامپیوتر' , 'حافظ');
+console.log(p);
+console.log(p.awake());
+console.log(p.doHomeWork());
+
+const pSport = new Athlete('محمد رضا' , 21 , 'سخره نوردی');
+console.log(pSport);
+console.log(pSport.infoAthlete());
