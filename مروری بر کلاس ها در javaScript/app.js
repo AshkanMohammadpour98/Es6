@@ -156,3 +156,38 @@
 
 // const person3 = new Person()
 // console.log(person3);
+
+
+//-----یک مثل از کلاس ها example class -----
+//خاطرمون باشه که کار کانسترکتور مقدار دهی کردن  پراپرتی های ابجیکت ها هستش
+
+// class Car {
+//     constructor(car_name , car_Year , car_color){
+//         this.name = car_name ,
+//         this.year = car_Year,
+//         this.color = car_color
+//     }
+
+//     age(){
+//         let d = new Date();
+//         return d.getFullYear() - this.year
+//     }
+//     info(){
+//         return `
+//         carName : ${this.name}
+//         carColor : ${this.color}
+//         carAge : ${this.age()}
+//         `
+//     }
+// }
+
+//this.name ? اشاره میکنه به اون رودی که موقعی که داریم new Car درست میکنیم
+//درواقع پراپرتی های ابجکتی هستن که  از روی کلاس کار ساخته میشه
+//car-name ? اشاره میکنه به ورودی کانسترکتور
+//البته اینا میتونن همنام هم باشن
+
+// const car1 = new Car('mazda3' , 2015 , 'red');
+
+// console.log(car1)
+// console.log(car1.info());
+//از همین کلاس ماشین میتونیم هرچندتا که خوایم درست کنیم
