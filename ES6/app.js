@@ -140,11 +140,20 @@
 //کاری که انجام میده میتونیم هرکدوم ار از اعضای ارایه رو درون متغیری که میخوایم ذخیره کنیم
 // یا اینکه اون عضوی که میخوایم رو تخریب کنیم بریزیم تو یه متغیر
 
-let array = ['milad' , 26 , true , {name : 'ali'} , 'reza'];
+// let array = ['milad' , 26 , true , {name : 'ali'} , 'reza'];
 
-let [item1 , , item2 , ...item3] = array;
+// let [item1 , , item2 , ...item3] = array;
 //کاری که اینجا انجام دادیم اینطوری بوده که ایتم یک میلاد داخلش  ذخیره میشه
 // و یه اگنور یا مقدار عدد 26 رو درنطر نگرفتیم و ترو میشه ایتم 2
 // و اومدیم از روش اسپرد استفاده کردیم و گفتیم هرچی مانده بود داخل ایتم سه قرار بده  که یه ارایه میده که هرچی هست توش ذخیره میشه
 
-console.log(item1 , item2 , item3);  // milad 26 [{name : 'ali'} , reza]
+// console.log(item1 , item2 , item3);  // milad 26 [{name : 'ali'} , reza]
+
+// ---------------------------------------------- object destructuring ------------------------
+//object destructuring
+// custom prop name میتونیم اون پراپ ها که اسم دارن رو خودمون یه اسم دیگه براشون بزاریم
+
+// let obje = {id :1 , firstName : 'milad' , LastName : 'bahrami' , age: 28};
+
+// let {id , firstName : name , LastName : Lname , age} = obje;
+// console.log(id , name , Lname , age);   
