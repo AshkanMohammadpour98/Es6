@@ -212,7 +212,7 @@
 //از این متد برای جمع کردن اعداد داخل ارایه استفاده میکنیم بیشتر و دو مقدار وردی میگیره
 // و یه عدد رو ریترن میکنه که میتونیم تو یه متغیر اون عددی که میده رو ذخیره کنیم
 
-let numbers = [2 , 4 , 10 , 15 , 5 , 1];
+// let numbers = [2 , 4 , 10 , 15 , 5 , 1];
 
-let result = numbers.reduce((prev , current) => prev + current) // چون یه خط بود ننوشتیم retrn میکنه خودش
-console.log(result); //37
+// let result = numbers.reduce((prev , current) => prev + current) // چون یه خط بود ننوشتیم retrn میکنه خودش
+// console.log(result); //37
