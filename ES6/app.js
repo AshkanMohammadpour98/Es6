@@ -177,11 +177,30 @@
 
 //پس اگه نیاز داشتیم یه بلایی سر تک تک خانه های ارایه بیاریم و اون رو ریترن کنیم و تویه ارایه جدید زخیره کنیم از متد مپ استفاده میکنیم
 
-let numbers  = [1 , 2 , 3 , 4 , 5]
+// let numbers  = [1 , 2 , 3 , 4 , 5]
 
-let  newNumbers = numbers.map( number =>{
-    return number * 10
-})
+// let  newNumbers = numbers.map( number =>{
+//     return number * 10
+// })
 
 //یه ارایه جدید برمیگردونه که اون تغیراتی که رو تک تک ایتم هاانجام دادیم رو تویه ارایه جدید ذخیره میکنه
-console.log(newNumbers); //[10 , 20 , 30 , 40 , 50]
+// console.log(newNumbers); //[10 , 20 , 30 , 40 , 50]
+
+
+// ---------------------------------------------------- filter method ----------------------
+//این متد فیلتر مثل فورایچ یه چیزی رو ریترن میکنه یه ارایه جدید رو و میتونیم تو یه مغیر ذخیرش کنیم
+//فرض کنید که یه ارایه ای داریم  و میخوایم که اون اعدادی که زوج هستن رو فیلترکینیم و تو یه ارایه دیگه ذخیره کنیم
+
+let numbers = [1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 , 9, 10];
+
+let newNumbers = numbers.filter( number=>{
+    return number % 2 ===0;
+} )
+
+console.log(newNumbers);
+
+let numbers2 = [5 , 10 , 12 , 13 , 15 , 16 , 17 , 18];
+let newNumbers2 = numbers2.filter(number=>{
+    return number >= 14
+})
+console.log(newNumbers2);
