@@ -157,3 +157,13 @@
 
 // let {id , firstName : name , LastName : Lname , age} = obje;
 // console.log(id , name , Lname , age);   
+
+
+// ------------------------------------------- forEach method -----------------------------
+
+//forEach میکه برای هر 
+// به ازای هر کدوم از اعضای ارایه میتونیم یه فانکشن اجرا کنیم
+
+let numbers = [ 1, 2 , 3 , 4 , 5];
+
+numbers.forEach( number => console.log(number * 10));
