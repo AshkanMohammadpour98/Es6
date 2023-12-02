@@ -191,16 +191,28 @@
 //این متد فیلتر مثل فورایچ یه چیزی رو ریترن میکنه یه ارایه جدید رو و میتونیم تو یه مغیر ذخیرش کنیم
 //فرض کنید که یه ارایه ای داریم  و میخوایم که اون اعدادی که زوج هستن رو فیلترکینیم و تو یه ارایه دیگه ذخیره کنیم
 
-let numbers = [1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 , 9, 10];
+// let numbers = [1 , 2 , 3 , 4 , 5 , 6 ,7 ,8 , 9, 10];
 
-let newNumbers = numbers.filter( number=>{
-    return number % 2 ===0;
-} )
+// let newNumbers = numbers.filter( number=>{
+//     return number % 2 ===0;
+// } )
 
-console.log(newNumbers);
+// console.log(newNumbers);
 
-let numbers2 = [5 , 10 , 12 , 13 , 15 , 16 , 17 , 18];
-let newNumbers2 = numbers2.filter(number=>{
-    return number >= 14
-})
-console.log(newNumbers2);
+// let numbers2 = [5 , 10 , 12 , 13 , 15 , 16 , 17 , 18];
+// let newNumbers2 = numbers2.filter(number=>{
+//     return number >= 14
+// })
+// console.log(newNumbers2);
+
+
+// ------------------------------------------------------- reduce method ------------------------------------
+
+//این متد مثلا اگه ارایه مون 5 عضوی باشه 4 بار تکرار میشه  یکی کمتر از عضوها
+//از این متد برای جمع کردن اعداد داخل ارایه استفاده میکنیم بیشتر و دو مقدار وردی میگیره
+// و یه عدد رو ریترن میکنه که میتونیم تو یه متغیر اون عددی که میده رو ذخیره کنیم
+
+let numbers = [2 , 4 , 10 , 15 , 5 , 1];
+
+let result = numbers.reduce((prev , current) => prev + current) // چون یه خط بود ننوشتیم retrn میکنه خودش
+console.log(result); //37
